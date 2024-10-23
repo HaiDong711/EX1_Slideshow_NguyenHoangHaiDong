@@ -1,11 +1,17 @@
+
+// src/components/Slideshow/Slideshow.js
 import React, { useState } from 'react';
+import './Slideshow.css';  // Nhập CSS nếu cần
 
 function Slideshow() {
   const [imgId, setImgId] = useState(0);
-  const [imgWidth, setImgWidth] = useState(300);
-  const [imgHeight, setImgHeight] = useState(200);
+  const imgWidth = 300;
+  const imgHeight = 200;
 
-  const images = ["/my-new-app/public/img_laptop.jpg"
+  const images = [
+    "https://picsum.photos/300/200?image=0",
+    "https://picsum.photos/300/200?image=1",
+    "https://picsum.photos/300/200?image=2",
   ];
 
   const nextImage = () => {
@@ -21,7 +27,7 @@ function Slideshow() {
   };
 
   return (
-    <div>
+    <div className="slideshow">
       <img src={images[imgId]} width={imgWidth} height={imgHeight} alt="slideshow" />
       <div>
         <button onClick={prevImage}>Previous</button>
