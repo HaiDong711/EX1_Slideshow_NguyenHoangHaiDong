@@ -2,7 +2,6 @@
   "name": "ex1_slideshow_nguyenhoanghai",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://HaiDong711.github.io/ex1_slideshow_nguyenhoanghai", 
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -16,9 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
