@@ -1,7 +1,4 @@
-
-// src/components/Slideshow/Slideshow.js
 import React, { useState } from 'react';
-import './Slideshow.css';  // Nhập CSS nếu cần
 
 function Slideshow() {
   const [imgId, setImgId] = useState(0);
